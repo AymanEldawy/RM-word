@@ -1,0 +1,101 @@
+extends MasterPage
+block title 
+  title Languages
+block content   
+  .langs-page
+    .container
+      main
+        h1._title Languages
+      form(class="form-add-lang form-insert")
+          .form-row
+            //- input(type="text" required placeholder="Add new language")
+            select(required)
+              option(value="") Choose new language
+              option(value="Afrikaans") Afrikaans
+              option(value="Albanian") Albanian
+              option(value="Arabic") Arabic
+              option(value="Armenian") Armenian
+              option(value="Basque") Basque
+              option(value="Bengali") Bengali
+              option(value="Bulgarian") Bulgarian
+              option(value="Catalan") Catalan
+              option(value="Cambodian") Cambodian
+              option(value="Chinese (Mandarin)") Chinese (Mandarin)
+              option(value="Croatian") Croatian
+              option(value="Czech") Czech
+              option(value="Danish") Danish
+              option(value="Dutch") Dutch
+              option(value="English") English
+              option(value="Estonian") Estonian
+              option(value="Fiji") Fiji
+              option(value="Finnish") Finnish
+              option(value="French") French
+              option(value="Georgian") Georgian
+              option(value="German") German
+              option(value="Greek") Greek
+              option(value="Gujarati") Gujarati
+              option(value="Hebrew") Hebrew
+              option(value="Hindi") Hindi
+              option(value="Hungarian") Hungarian
+              option(value="Icelandic") Icelandic
+              option(value="Indonesian") Indonesian
+              option(value="Irish") Irish
+              option(value="Italian") Italian
+              option(value="Japanese") Japanese
+              option(value="Javanese") Javanese
+              option(value="Korean") Korean
+              option(value="Latin") Latin
+              option(value="Latvian") Latvian
+              option(value="Lithuanian") Lithuanian
+              option(value="Macedonian") Macedonian
+              option(value="Malay") Malay
+              option(value="Malayalam") Malayalam
+              option(value="Maltese") Maltese
+              option(value="Maori") Maori
+              option(value="Marathi") Marathi
+              option(value="Mongolian") Mongolian
+              option(value="Nepali") Nepali
+              option(value="Norwegian") Norwegian
+              option(value="Persian") Persian
+              option(value="Polish") Polish
+              option(value="Portuguese") Portuguese
+              option(value="Punjabi") Punjabi
+              option(value="Quechua") Quechua
+              option(value="Romanian") Romanian
+              option(value="Russian") Russian
+              option(value="Samoan") Samoan
+              option(value="Serbian") Serbian
+              option(value="Slovak") Slovak
+              option(value="Slovenian") Slovenian
+              option(value="Spanish") Spanish
+              option(value="Swahili") Swahili
+              option(value="Swedish ") Swedish 
+              option(value="Tamil") Tamil
+              option(value="Tatar") Tatar
+              option(value="Telugu") Telugu
+              option(value="Thai") Thai
+              option(value="Tibetan") Tibetan
+              option(value="Tonga") Tonga
+              option(value="Turkish") Turkish
+              option(value="Ukrainian") Ukrainian
+              option(value="Urdu") Urdu
+              option(value="Uzbek") Uzbek
+              option(value="Vietnamese") Vietnamese
+              option(value="Welsh") Welsh
+              option(value="Xhosa") Xhosa
+            div(class="choose-color")
+              i(class="fa fa-palette" onclick="OpenColorList()")
+              ul#langColor
+                li(data-color="#9c27b0" style="background: #9c27b0")
+                li(data-color="#673ab7" style="background: #673ab7")
+                li(data-color="#3f51b5" style="background: #3f51b5")
+                li(data-color="#2196f3" style="background: #2196f3")
+                li(data-color="#4caf50" style="background: #4caf50")
+                li(data-color="#ff9800" style="background: #ff9800")
+                li(data-color="#f44336" style="background: #f44336")
+                li(data-color="#ff5722" style="background: #ff5722")
+            button(type="button" class="btn primary" onclick="addLang()") Save
+      hr
+      .languages
+            
+            

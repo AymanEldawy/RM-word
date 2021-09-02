@@ -1,0 +1,19 @@
+extends MasterPage
+block title 
+  title Testing
+block content   
+  //- 
+  .testing-page 
+    .container
+      main 
+        h1._title Result
+        div(class="choose-page")
+          button(class="active" onclick="choosePage(this)" data-page="result") Result
+          button(onclick="choosePage(this)" data-page="testing") Testing
+      section(class="show-page show-result")
+        div(class="testing _testing")
+          div(class="test") 
+            div.test-start
+              i(class="fa fa-ban")
+              p You can't start testing now. #[strong must be] #[span Phrases] or #[span words] or #[span Alphabet] more than 5 items
+        div(class="_result")

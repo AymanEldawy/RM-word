@@ -1,0 +1,27 @@
+extends MasterPage
+block title 
+  title Alphabet
+block content   
+  .alphabet-page 
+    .container
+      main 
+        h1._title Alphabet
+        div(class="choose-page")
+          button(class="active" data-page="result" onclick="choosePage(this)") Alphabet
+          button(data-page="add"  onclick="choosePage(this)") Add new
+      .show-page.show-result 
+        ._add
+          form(class="form-add-alphabet form-insert")
+            h3 Add alphabet
+            .field 
+              input(type="text" class="char" placeholder="char" required)
+            .field 
+              input(type="text" class="sound" placeholder="sound" required)
+            .field 
+              select(class="check-language")
+            button(class="btn primary " type="button" onclick="addChar()") save
+        ._result
+          .alphabet-lang
+          .alphabet-filter.filters 
+          .alphabet
+            .empty There's no alphabets

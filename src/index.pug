@@ -1,0 +1,29 @@
+extends MasterPage
+block title 
+  title Home
+block content   
+  .dashboard-page
+    .container
+      main
+        h1._title Dashboard
+      div(class="results")
+        div(class="result langs-result")
+          span(class="result-tag") #[i(class="fa fa-language")]
+          h3(class="result-title lang-count")
+          div(class="result-details")
+        div(class="result lists-result")
+          span(class="result-tag") #[i(class="fa fa-tags")]
+          h3(class="result-title list-count")
+          div(class="result-details")
+        div(class="result words-result")
+          span(class="result-tag") #[i(class="fa fa-bookmark")]
+          h3(class="result-title word-count")
+          div(class="result-details")
+        div(class="result phrases-result")
+          span(class="result-tag") #[i(class="fa fa-bookmark")]
+          h3(class="result-title phrase-count")
+          div(class="result-details")
+        div(class="result alphabet-result")
+          span(class="result-tag") #[i(class="fa fa-alphabet")]
+          h3(class="result-title alphabet-count")
+          div(class="result-details")

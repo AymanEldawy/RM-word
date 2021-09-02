@@ -1,0 +1,36 @@
+extends MasterPage
+block title 
+  title Words
+block content   
+  //- 
+  .words-page 
+    .container
+      main 
+        h1._title Words
+        div(class="choose-page")
+          button(class="active" onclick="choosePage(this)" data-page="result") Words
+          button(onclick="choosePage(this)" data-page="add") Add new
+      .show-page.show-result 
+        ._add
+          form(class="form-add-word form-insert")
+            h3 Add word
+            .field
+              label(for="word") Word *
+              input(name="word" type="text" class="word" required )
+            .field
+              label(for="translation" ) Translation *
+              input(name="translation" type="text" class="translation" required )
+            .field
+              label() Language *
+              select(name="lang" class="check-language")
+            .field
+              label() List *
+              select(name="list" class="check-list")
+            button(class="btn primary" type="button" onclick="addWord()") Save
+            p(class="status-msg-success") #[i(class="fa fa-check-circle")] #[strong successful ] add new word
+        ._result
+          .filters
+            .filter-lang
+            .filter-list
+          .words
+      

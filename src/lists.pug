@@ -1,0 +1,17 @@
+extends MasterPage
+block title 
+  title Lists
+block content   
+  .lists-page
+    .container
+      main
+        h1._title Lists
+      form(class="form-add-list form-insert") 
+        .form-row
+          input(type="text" required placeholder="Add new list")
+          select(class="check-language")
+          button(type="button" class="btn primary" onclick="addList()") Save
+      hr
+      .lists
+          
+            

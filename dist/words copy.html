@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Words</title>
+  </head>
+  <body> 
+    <nav>
+      <div class="container">
+        <h4 class="brand"><a href="index.html">RM-word</a></h4>
+        <div>
+          <ul class="menu"> 
+            <li><a data-link="Home" href="index.html">Home</a></li>
+            <li><a data-link="Alphabet" href="alphabet.html">Alphabet</a></li>
+            <li><a data-link="Words" href="words.html">Words</a></li>
+            <li><a data-link="Pharse" href="pharse.html">Pharse</a></li>
+            <li><a data-link="Testing" href="testing.html">Testing</a></li><span class="open-modal"> <i class="fa fa-plus"></i></span>
+            <ul class="dropdown-menu"> 
+              <li><a data-open="insert-lang">Add lang</a></li>
+              <li><a data-open="insert-list">Add list</a></li>
+              <li><a data-open="insert-word">Add word</a></li>
+              <li><a data-open="insert-phrase">Add phrase</a></li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="words"></div>
+      <div class="modal" onclick="closeModal()">
+        <div class="modal-content insert-list">
+          <div class="add-lang"> 
+            <h3>Add language </h3>
+            <div class="form-add-lang form-insert">
+              <input type="text" required placeholder="Add new language">
+              <button class="btn-outline-hover" type="button" onclick="addLang()">Save</button>
+            </div>
+          </div>
+          <div class="add-list">    
+            <h3>Add list </h3>
+            <div class="form-add-list form-insert"> 
+              <input type="text" required placeholder="Add new list">
+              <select class="check-language"></select>
+              <button class="btn-outline-hover" type="button" onclick="addList()">Save</button>
+            </div>
+          </div>
+          <div class="add-word">
+            <h3>Add word</h3>
+            <form class="form-add-word form-insert">
+              <div class="field">
+                <label for="word">Word *</label>
+                <input class="word" name="word" type="text" required>
+              </div>
+              <div class="field">
+                <label for="translation">Translation *</label>
+                <input class="translation" name="translation" type="text" required>
+              </div>
+              <div class="field">
+                <label>Language *</label>
+                <select class="check-language" name="lang"></select>
+              </div>
+              <div class="field">
+                <label>List *</label>
+                <select class="check-list" name="list"></select>
+              </div>
+              <button class="btn primary" type="button" onclick="addWord()">Save</button>
+              <p class="status-msg-success"><i class="fa fa-check-circle"></i> <strong>successful </strong> add new word</p>
+            </form>
+          </div>
+          <div class="add-phrase">
+            <h3>Add Phrase</h3>
+            <form class="form-add-phrase form-insert">
+              <div class="field">
+                <label for="phrase">Phrase *</label>
+                <input class="phrase" name="phrase" type="text" required>
+              </div>
+              <div class="field">
+                <label for="translate">Translation *</label>
+                <input class="translate" name="translate" type="text" required>
+              </div>
+              <div class="field">
+                <label for="sound">Sound</label>
+                <input class="sound" name="sound" type="text">
+              </div>
+              <div class="field">
+                <label>Language *</label>
+                <select class="check-language" name="lang"></select>
+              </div>
+              <div class="field">
+                <label>List *</label>
+                <select class="check-list" name="list"></select>
+              </div>
+              <button class="btn primary" type="button" onclick="addPhrase()">Save</button>
+              <p class="status-msg-success"><i class="fa fa-check-circle"></i> <strong>successful </strong> add new word</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="words-page"> 
+      <div class="container">
+        <main> 
+          <h1>words</h1>
+        </main>
+        <div class="filters">
+          <div class="filter-lang"></div>
+          <div class="filter-list"></div>
+        </div>
+        <div class="words"></div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

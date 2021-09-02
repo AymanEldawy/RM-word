@@ -1,0 +1,13 @@
+- var titlePage = '';
+doctype
+html(lang="en")
+  head
+    include template/head.pug
+    block title  
+  body 
+    include template/nav.pug
+    block content
+    div(class="flash")
+    include template/footer.pug
+    
+

@@ -1,0 +1,39 @@
+extends MasterPage
+block title 
+  title Phrases
+block content   
+  //- 
+  .phrases-page 
+    .container
+      main 
+        h1._title Phrases
+        div(class="choose-page")
+          button(class="active" onclick="choosePage(this)" data-page="result") Phrases
+          button(onclick="choosePage(this)" data-page="add") Add new
+      .show-page.show-result
+        ._add 
+          form(class="form-add-phrase form-insert")
+            h3 Add Phrase
+            .field
+              label(for="phrase") Phrase *
+              input(name="phrase" type="text" class="phrase" required )
+            .field
+              label(for="translate" ) Translation *
+              input(name="translate" type="text" class="translate" required )
+            .field
+              label(for="sound" ) Sound
+              input(name="sound" type="text" class="sound" )
+            .field
+              label Language *
+              select(name="lang" class="check-language")
+            .field
+              label List *
+              select(name="list" class="check-list")
+            button(class="btn primary" type="button" onclick="addPhrase()") Save
+            p(class="status-msg-success") #[i(class="fa fa-check-circle")] #[strong successful ] add new word
+        ._result
+          .filters
+            .filter-lang
+            .filter-list
+          .phrases
+      

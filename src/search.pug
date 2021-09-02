@@ -1,0 +1,12 @@
+extends MasterPage
+block title 
+  title Testing
+block content   
+  //- 
+  .search-page 
+    form(class="form-search" action="search.html")
+      input(type="search" placeholder="search" name="q")
+      button #[i( class="fa fa-search")] Search
+    hr
+    .container
+      .search-content 

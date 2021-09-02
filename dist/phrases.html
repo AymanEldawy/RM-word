@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Phrases</title>
+  </head>
+  <body> 
+    <nav>
+      <div class="container">
+        <h4 class="brand"><a href="index.html">RM-word</a></h4>
+        <div class="nav-right">
+          <form class="form-search" action="search.html"> 
+            <input type="search" placeholder="search" name="q">
+            <button><i class="fa fa-search"></i></button>
+          </form>
+          <ul class="menu"> 
+            <li><a data-link="Languages" href="languages.html">Languages</a></li>
+            <li><a data-link="Lists" href="lists.html">Lists</a></li>
+            <li><a data-link="Alphabet" href="alphabet.html">Alphabet</a></li>
+            <li><a data-link="Words" href="words.html">Words</a></li>
+            <li><a data-link="Phrases" href="phrases.html">Phrases</a></li>
+            <li><a data-link="Testing" href="testing.html">Testing</a></li>
+            <li><a data-link="Bookmarks" href="bookmark.html">Bookmarks</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="phrases-page"> 
+      <div class="container">
+        <main> 
+          <h1 class="_title">Phrases</h1>
+          <div class="choose-page">
+            <button class="active" onclick="choosePage(this)" data-page="result">Phrases</button>
+            <button onclick="choosePage(this)" data-page="add">Add new</button>
+          </div>
+        </main>
+        <div class="show-page show-result">
+          <div class="_add"> 
+            <form class="form-add-phrase form-insert">
+              <h3>Add Phrase</h3>
+              <div class="field">
+                <label for="phrase">Phrase *</label>
+                <input class="phrase" name="phrase" type="text" required>
+              </div>
+              <div class="field">
+                <label for="translate">Translation *</label>
+                <input class="translate" name="translate" type="text" required>
+              </div>
+              <div class="field">
+                <label for="sound">Sound</label>
+                <input class="sound" name="sound" type="text">
+              </div>
+              <div class="field">
+                <label>Language *</label>
+                <select class="check-language" name="lang"></select>
+              </div>
+              <div class="field">
+                <label>List *</label>
+                <select class="check-list" name="list"></select>
+              </div>
+              <button class="btn primary" type="button" onclick="addPhrase()">Save</button>
+              <p class="status-msg-success"><i class="fa fa-check-circle"></i> <strong>successful </strong> add new word</p>
+            </form>
+          </div>
+          <div class="_result">
+            <div class="filters">
+              <div class="filter-lang"></div>
+              <div class="filter-list"></div>
+            </div>
+            <div class="phrases"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flash"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

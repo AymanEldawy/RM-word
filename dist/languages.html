@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Languages</title>
+  </head>
+  <body> 
+    <nav>
+      <div class="container">
+        <h4 class="brand"><a href="index.html">RM-word</a></h4>
+        <div class="nav-right">
+          <form class="form-search" action="search.html"> 
+            <input type="search" placeholder="search" name="q">
+            <button><i class="fa fa-search"></i></button>
+          </form>
+          <ul class="menu"> 
+            <li><a data-link="Languages" href="languages.html">Languages</a></li>
+            <li><a data-link="Lists" href="lists.html">Lists</a></li>
+            <li><a data-link="Alphabet" href="alphabet.html">Alphabet</a></li>
+            <li><a data-link="Words" href="words.html">Words</a></li>
+            <li><a data-link="Phrases" href="phrases.html">Phrases</a></li>
+            <li><a data-link="Testing" href="testing.html">Testing</a></li>
+            <li><a data-link="Bookmarks" href="bookmark.html">Bookmarks</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="langs-page">
+      <div class="container">
+        <main>
+          <h1 class="_title">Languages</h1>
+        </main>
+        <form class="form-add-lang form-insert">
+          <div class="form-row">
+            <select required>
+              <option value="">Choose new language</option>
+              <option value="Afrikaans">Afrikaans</option>
+              <option value="Albanian">Albanian</option>
+              <option value="Arabic">Arabic</option>
+              <option value="Armenian">Armenian</option>
+              <option value="Basque">Basque</option>
+              <option value="Bengali">Bengali</option>
+              <option value="Bulgarian">Bulgarian</option>
+              <option value="Catalan">Catalan</option>
+              <option value="Cambodian">Cambodian</option>
+              <option value="Chinese (Mandarin)">Chinese (Mandarin)</option>
+              <option value="Croatian">Croatian</option>
+              <option value="Czech">Czech</option>
+              <option value="Danish">Danish</option>
+              <option value="Dutch">Dutch</option>
+              <option value="English">English</option>
+              <option value="Estonian">Estonian</option>
+              <option value="Fiji">Fiji</option>
+              <option value="Finnish">Finnish</option>
+              <option value="French">French</option>
+              <option value="Georgian">Georgian</option>
+              <option value="German">German</option>
+              <option value="Greek">Greek</option>
+              <option value="Gujarati">Gujarati</option>
+              <option value="Hebrew">Hebrew</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Hungarian">Hungarian</option>
+              <option value="Icelandic">Icelandic</option>
+              <option value="Indonesian">Indonesian</option>
+              <option value="Irish">Irish</option>
+              <option value="Italian">Italian</option>
+              <option value="Japanese">Japanese</option>
+              <option value="Javanese">Javanese</option>
+              <option value="Korean">Korean</option>
+              <option value="Latin">Latin</option>
+              <option value="Latvian">Latvian</option>
+              <option value="Lithuanian">Lithuanian</option>
+              <option value="Macedonian">Macedonian</option>
+              <option value="Malay">Malay</option>
+              <option value="Malayalam">Malayalam</option>
+              <option value="Maltese">Maltese</option>
+              <option value="Maori">Maori</option>
+              <option value="Marathi">Marathi</option>
+              <option value="Mongolian">Mongolian</option>
+              <option value="Nepali">Nepali</option>
+              <option value="Norwegian">Norwegian</option>
+              <option value="Persian">Persian</option>
+              <option value="Polish">Polish</option>
+              <option value="Portuguese">Portuguese</option>
+              <option value="Punjabi">Punjabi</option>
+              <option value="Quechua">Quechua</option>
+              <option value="Romanian">Romanian</option>
+              <option value="Russian">Russian</option>
+              <option value="Samoan">Samoan</option>
+              <option value="Serbian">Serbian</option>
+              <option value="Slovak">Slovak</option>
+              <option value="Slovenian">Slovenian</option>
+              <option value="Spanish">Spanish</option>
+              <option value="Swahili">Swahili</option>
+              <option value="Swedish ">Swedish </option>
+              <option value="Tamil">Tamil</option>
+              <option value="Tatar">Tatar</option>
+              <option value="Telugu">Telugu</option>
+              <option value="Thai">Thai</option>
+              <option value="Tibetan">Tibetan</option>
+              <option value="Tonga">Tonga</option>
+              <option value="Turkish">Turkish</option>
+              <option value="Ukrainian">Ukrainian</option>
+              <option value="Urdu">Urdu</option>
+              <option value="Uzbek">Uzbek</option>
+              <option value="Vietnamese">Vietnamese</option>
+              <option value="Welsh">Welsh</option>
+              <option value="Xhosa">Xhosa</option>
+            </select>
+            <div class="choose-color"><i class="fa fa-palette" onclick="OpenColorList()"></i>
+              <ul id="langColor">
+                <li data-color="#9c27b0" style="background: #9c27b0"></li>
+                <li data-color="#673ab7" style="background: #673ab7"></li>
+                <li data-color="#3f51b5" style="background: #3f51b5"></li>
+                <li data-color="#2196f3" style="background: #2196f3"></li>
+                <li data-color="#4caf50" style="background: #4caf50"></li>
+                <li data-color="#ff9800" style="background: #ff9800"></li>
+                <li data-color="#f44336" style="background: #f44336"></li>
+                <li data-color="#ff5722" style="background: #ff5722"></li>
+              </ul>
+            </div>
+            <button class="btn primary" type="button" onclick="addLang()">Save</button>
+          </div>
+        </form>
+        <hr>
+        <div class="languages"></div>
+      </div>
+    </div>
+    <div class="flash"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
