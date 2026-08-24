@@ -2,11 +2,9 @@
 
 A lightweight static web project built with a custom frontend structure and deployed through GitHub Pages.
 
-![RM-word project preview](assets/preview.jpeg)
-
 ## Live preview
 
-[View the project](https://aymaneldawy.github.io/RM-word/)
+[View the project](https://aymaneldawy.github.io/RM-word/index.html)
 
 ## Built with
 
